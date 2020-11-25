@@ -1,11 +1,11 @@
-travis banner
-codecov banner
-codefactor banner
+[![Build Status](https://travis-ci.com/lucas-gio/design-patterns.svg?branch=main)](https://travis-ci.com/lucas-gio/design-patterns)
+[![codecov](https://codecov.io/gh/lucas-gio/design-patterns/branch/main/graph/badge.svg?token=UMXLTH54H4)](https://codecov.io/gh/lucas-gio/design-patterns)
+[![CodeFactor](https://www.codefactor.io/repository/github/lucas-gio/design-patterns/badge)](https://www.codefactor.io/repository/github/lucas-gio/design-patterns)
 
 <p align="left">
   <a href="#">Español</a> |
-  <a href="">Português</a> |
-  <a href="">English</a> 
+  <a href="https://github.com/lucas-gio/design-patterns/blob/main/lang/pt/README.md">Português</a> |
+  <a href="https://github.com/lucas-gio/design-patterns/blob/main/lang/en/README.md">English</a> 
 </p>
 
 # Patrones de diseño 
