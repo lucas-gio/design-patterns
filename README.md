@@ -38,7 +38,6 @@ La construcción de un cliente [Customer](../main/main/java/com/application/buil
 
 ### Con herencia
 [A DETALLAR]
-https://github.com/lucas-gio/design-patterns/blob/main/test/groovy/com/application/builder/withStaticInnerClass/CustomerTest.groovy
 
 ### Test
 [A DETALLAR MÁS]
