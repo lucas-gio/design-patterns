@@ -27,6 +27,6 @@ Diferentes implementaciones, seguras e inseguras, del patrón singleton.
 * [SingletonEnum](../main/main/java/com/application/singleton/SingletonEnum.java), una implementación con Enum. La mejor implementación ya que evita problemas de concurrencia, de serialización (ya que al deserializar se obtiene el mismo objeto), y de reflexión (porque en los demás es posible hacer el constructor público y crear nuevas instancias).
 
 ### Test
-La clase [SingletonTest]() contiene las pruebas unitarias de cada implementación. Se obtiene una primer instancia, luego 1.000.000 de instancias más, y se verifica que todas tengan el mismo valor.
+La clase [SingletonTest](../main/test/groovy/com/application/singleton/SingletonTest.groovy) contiene las pruebas unitarias de cada implementación. Se obtiene una primer instancia, luego 1.000.000 de instancias más, y se verifica que todas tengan el mismo valor.
 
 
