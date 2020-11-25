@@ -48,8 +48,9 @@ La implementación con clase interna estática se prueba en la clase [CustomerTe
 
 ## Prototype
 ### Implementación
-Una aeronave (interfaz Airplane) es clonable. La clase jet (una implementación de Airplane) es la que se va a utilizar como prototipo a clonar.
-Se utiliza la fábrica [AirplaneFactory]() para obtener las nuevas intancias basadas en los prototipos de aeronaves.
+
+Una aeronave (interfaz [Airplane](../main/main/java/com/application/prototype/entities/Airplane.java)) es clonable. La clase [Jet](../main/main/java/com/application/prototype/entities/Jet.java) (una implementación de Airplane) es la que se va a utilizar como prototipo a clonar.
+Se utiliza la fábrica [AirplaneFactory](../main/main/java/com/application/prototype/factories/AirplaneFactory.java) para obtener las nuevas intancias basadas en los prototipos de aeronaves.
 
 ### Test
-El test [AirplaneFactoryTest]() permite verificar que en base a dos prototipos, al obtener cinco instancias de cada uno de ellos, cada una de estas nuevas instancias tiene los valores mismos que los modelos. Además verifica que son todas instancias diferentes.
+El test [AirplaneFactoryTest](../main/test/groovy/com/application/prototype/entities/AirplaneFactoryTest.groovy) permite verificar que en base a dos prototipos, al obtener cinco instancias de cada uno de ellos, cada una de estas nuevas instancias tiene los valores mismos que los modelos. Además verifica que son todas instancias diferentes.
