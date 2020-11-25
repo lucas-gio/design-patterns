@@ -1,24 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.application</groupId>
-    <artifactId>design-patterns</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <name>Design patterns practices</name>
+    <artifactId>designPatterns</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>designPatterns</name>
+    <description>Prácticas sobre patrones de diseño</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.12</maven.compiler.source>
-        <maven.compiler.target>1.12</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <spock.version>1.0-groovy-2.4</spock.version>
         <groovy.version>2.4.7</groovy.version>
-        <java.version>1.12</java.version>
-        <logging.version>1.2.17</logging.version>
-        <slf4j.version>1.7.21</slf4j.version>
+        <java.version>1.8</java.version>
     </properties>
 
     <dependencies>
@@ -35,38 +32,23 @@
             <type>pom</type>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${logging.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
-        <finalName>Singleton</finalName>
+        <finalName>Prototype</finalName>
         <plugins>
-        <plugin>
-               <groupId>org.codehaus.mojo</groupId>
-               <artifactId>cobertura-maven-plugin</artifactId>
-               <version>2.7</version>
-               <configuration>
-                   <formats>
-                       <format>html</format>
-                       <format>xml</format>
-                   </formats>
-                   <check />
-               </configuration>
-           </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <formats>
+                        <format>html</format>
+                        <format>xml</format>
+                    </formats>
+                    <check />
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
