@@ -29,7 +29,7 @@ Diferentes implementaciones, seguras e inseguras, del patrón singleton.
 ### Test
 La clase [SingletonTest](../main/test/groovy/com/application/singleton/SingletonTest.groovy) contiene las pruebas unitarias de cada implementación. Se obtiene una primer instancia, luego 1.000.000 de instancias más, y se verifica que todas tengan el mismo valor.
 
-# Builder: Distintas implementaciones
+## Builder: Distintas implementaciones
 ### Con clase interna estática
 La construcción de un cliente [Customer](../main/main/java/com/application/builder/withStaticInnerClass/Customer.java) la realiza Customer.CustomerBuilder. Toma los parámetros requeridos sólamente. Si no se especifica si está activo o no, por defecto, estará activo.
 
