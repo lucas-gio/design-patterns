@@ -46,4 +46,10 @@ La implementación con clase interna estática se prueba en la clase [CustomerTe
 
 * Se verifica que el builder de clientes genera correctamente los clientes: Se crea un cliente con datos requeridos sólamente, otro con sólo algunos datos opcionales, y un tercero con todos los atributos. Se verifica que no haya excepción al construir, y que el cliente resultante tenga los valores esperados.
 
+## Prototype
+### Implementación
+Una aeronave (interfaz Airplane) es clonable. La clase jet (una implementación de Airplane) es la que se va a utilizar como prototipo a clonar.
+Se utiliza la fábrica [AirplaneFactory]() para obtener las nuevas intancias basadas en los prototipos de aeronaves.
 
+### Test
+El test [AirplaneFactoryTest]() permite verificar que en base a dos prototipos, al obtener cinco instancias de cada uno de ellos, cada una de estas nuevas instancias tiene los valores mismos que los modelos. Además verifica que son todas instancias diferentes.
