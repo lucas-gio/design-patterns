@@ -37,10 +37,10 @@ La construcción de un cliente [Customer](../main/main/java/com/application/buil
 La construcción de un cliente [Customer](../main/main/java/com/application/builder/withSeparatedClasses/Customer.java) la realiza el builder [CustomerBuilder](../main/main/java/com/application/builder/withSeparatedClasses/CustomerBuilder.java). Toma los parámetros requeridos sólamente. Si no se especifica si está activo o no, por defecto, estará activo.
 
 ### Con herencia
-[A DETALLAR]
+#### A DETALLAR
 
 ### Test
-[A DETALLAR MÁS]
+#### A DETALLAR
 La implementación con clase interna estática se prueba en la clase [CustomerTest](../main/test/groovy/com/application/builder/withStaticInnerClass/CustomerTest.groovy). La implementación de clases separadas, en [CustomerTest](../main/test/groovy/com/application/builder/withSeparatedClasses/CustomerTest.groovy). Para la implementación con herencia [purchaseWithdrawalTest](../main/test/groovy/com/application/builder/withInheritanceStaticInnerClass/purchaseWithdrawalTest.groovy).
 * Se verifica que el builder de clientes genera nuevas instancias: Se crean 5.000 instancias y verifica que todas son únicas. Para ello se toma su hashcode, se almacena en un listado, y luego se eliminan duplicados. Se verifica que este listado único tiene 5000 elementos.
 
