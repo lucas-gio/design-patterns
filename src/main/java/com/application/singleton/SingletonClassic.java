@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.application.singleton.singletonClasses;
+package com.application.singleton;
 
 import java.util.Date;
 
 public class SingletonClassic extends SingletonBase{
-    private static Date instance;
+    private static Logger instance;
     private SingletonClassic(){}
 
-    public static Date getInstance(){
+    @overr
+    public static Logger getInstance(){
         if(instance == null){
             instance = new Date();
         }

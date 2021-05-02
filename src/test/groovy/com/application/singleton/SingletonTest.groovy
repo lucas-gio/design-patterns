@@ -10,6 +10,20 @@ import spock.lang.Specification
 import java.util.List
 
 class SingletonTest extends Specification {
+
+    private static Callable<String> getInstance(SingletonBase theClass) {
+        return ()->{
+            try {
+                TimeUnit.SECONDS.sleep(1);
+                Log("Finaliza la tarea " + numeroTarea);
+                return "resultado de la tarea " + numeroTarea;
+            } catch (InterruptedException e) {
+                Log("sleep ha sido interrumpido en tarea " + numeroTarea);
+                return null;
+            }
+        };
+    }
+
     def "Se verifica que se obtenga siempre la misma instancia para SingletonClassic"(){
         given:"Una instancia inicial"
         Date instance = SingletonClassic.getInstance()
